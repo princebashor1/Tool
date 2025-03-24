@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free YouTube Video Downloader - Download HD videos from YouTube in MP4, WEBM, 3GP formats. 100% Free and Secure Service">
+    <meta name="keywords" content="youtube downloader, video downloader, download youtube videos, mp4 download, hd video download, youtube video downloader">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free YouTube Video Downloader">
+    <meta property="og:description" content="Download YouTube videos in multiple formats and quality options instantly">
+    <meta property="og:image" content="https://example.com/thumbnail.jpg">
+    <link rel="canonical" href="https://example.com/">
+    
+    <!-- Google Adsense Meta Tag -->
+    <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+    
+    <title>Free YouTube Video Downloader | HD MP4 Downloads</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: #ff0000;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .download-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .url-input {
+            width: 100%;
+            padding: 12px;
+            margin: 1rem 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .download-btn {
+            background: #ff0000;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #cc0000;
+        }
+
+        .quality-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .ad-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .disclaimer {
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0.5rem;
+            }
+            
+            .download-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>YouTube Video Downloader</h1>
+    </header>
+
+    <!-- Top Ad -->
+    <div class="container">
+        <div class="ad-section">
+            <!-- Google Adsense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="download-section">
+            <input type="url" 
+                   class="url-input" 
+                   placeholder="Paste YouTube URL here..."
+                   id="videoUrl">
+            <div class="quality-options" id="qualityOptions">
+                <!-- Quality options will be dynamically generated here -->
+            </div>
+        </div>
+
+        <!-- Middle Ad -->
+        <div class="ad-section">
+            <!-- Google Adsense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:728px;height:90px"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"></ins>
+        </div>
+    </main>
+
+    <!-- Sidebar Ad (Desktop Only) -->
+    <div class="ad-section sidebar-ad">
+        <!-- Google Adsense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:600px"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="XXXXXXXXXX"></ins>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="disclaimer">
+            <p>Disclaimer: This tool is intended for educational purposes only. Downloading copyrighted content may violate YouTube's terms of service. Please ensure you have proper rights before downloading any video.</p>
+            <p>© 2024 YouTube Video Downloader. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulated quality options (requires backend integration)
+        document.getElementById('videoUrl').addEventListener('input', function(e) {
+            const qualityOptions = document.getElementById('qualityOptions');
+            qualityOptions.innerHTML = `
+                <button class="download-btn">MP4 1080p</button>
+                <button class="download-btn">MP4 720p</button>
+                <button class="download-btn">MP4 480p</button>
+                <button class="download-btn">MP3 128kbps</button>
+            `;
+        });
+
+        // Initialize Google Ads
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "YouTube Video Downloader",
+        "description": "Free online YouTube video downloader supporting multiple formats and quality options",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0"
+        }
+    }
+    </script>
+</body>
+</html>
